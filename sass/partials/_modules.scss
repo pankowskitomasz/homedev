@@ -1,0 +1,67 @@
+.bg{
+    &-footer{
+        @include set-background($bg__footer-img,0,"center right","cover","scroll");
+    }
+    &-green{
+        background-color: $color__green !important;
+    }
+}
+.contact{
+    &-bg{
+        @include set-background($bg__contact-img,0,"top left","cover","fixed");
+    }
+    &-form {
+        ::-webkit-input-placeholder { 
+            color: white;
+          }
+          ::-moz-placeholder { 
+            color: white;
+          }
+          :-ms-input-placeholder { 
+            color: white;
+          }
+          :-moz-placeholder { 
+            color: white;
+          }
+    }
+}
+.login{
+    &-form {
+        @include set-background($bg__login-img,0,"top left","cover","fixed");
+
+        ::-webkit-input-placeholder { 
+            color: white;
+          }
+          ::-moz-placeholder { 
+            color: white;
+          }
+          :-ms-input-placeholder { 
+            color: white;
+          }
+          :-moz-placeholder { 
+            color: white;
+          }
+    }
+}
+.register{
+    &-form{
+        @extend .login-form;
+    }
+}
+.opacity{
+    &-8{
+        opacity: 0.8;
+    }
+}
+.text{
+    &-green{
+        color: $color__green !important;
+    }
+    &-shadow-white{
+        text-shadow: $text__shadow--white;
+    }
+}
+
+textarea{
+    resize: none;
+}
