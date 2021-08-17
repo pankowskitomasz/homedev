@@ -1,9 +1,37 @@
 .bg{
+    &-about{
+        &-desc{
+            @include set-background($bg__about-desc-img,0,"right bottom","cover","scroll");
+        }
+        &-ext{
+            @include set-background($bg__about-ext-img,0,"left top","cover","scroll");
+        }
+    }
     &-footer{
         @include set-background($bg__footer-img,0,"center right","cover","scroll");
     }
+    &-gallery{        
+        @include set-background($bg__gallery-img,0,"center right","cover","scroll");
+    }
     &-green{
         background-color: $color__green !important;
+    }
+    &-home{        
+        @include set-background($bg__home-img,0,"top right","cover","scroll");
+    }
+    &-lime{
+        background-color: $color__lime!important;
+    }
+    &-offer{        
+        @include set-background($bg__offer-img,0,"center right","cover","scroll");
+    }
+}
+.border{
+    &-green{
+        border-color: $color__green !important;
+    }
+    &-lime{
+        border-color: $color__lime!important;
     }
 }
 .contact{
@@ -43,19 +71,29 @@
           }
     }
 }
-.register{
-    &-form{
-        @extend .login-form;
-    }
-}
 .opacity{
     &-8{
         opacity: 0.8;
     }
 }
+.placeholder{
+    &-lime{
+        &::placeholder{
+            color: $color__lime!important;
+        }
+    }
+}
+.register{
+    &-form{
+        @extend .login-form;
+    }
+}
 .text{
     &-green{
         color: $color__green !important;
+    }
+    &-lime{
+        color: $color__lime!important;
     }
     &-shadow-white{
         text-shadow: $text__shadow--white;

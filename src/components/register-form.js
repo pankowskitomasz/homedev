@@ -83,10 +83,10 @@ class RegisterForm extends Component{
             <Container fluid className={"register-form align-items-center p-0 py-5 d-flex minh-100vh "+this.props.classExt}>
                 <Row className="mx-auto text-start w-100 pt-5">
                     <Col xs={10} md={5} lg={4} className="mx-auto p-0 d-flex align-items-center">
-                        <Form className="text-start w-100 border border-light p-4 rounded bg-green shadow text-white fw-bold opacity-8 z-index-10"
+                        <Form className="text-start w-100 border border-lime p-4 rounded bg-green shadow text-lime fw-bold opacity-9 z-index-10"
                             autoComplete="off"
                             method="POST">
-                            <div className="border-bottom border-light mb-4">
+                            <div className="border-bottom border-lime mb-4">
                                 <p className="font-weight-bold mb-1">
                                     Register user
                                 </p>
@@ -95,7 +95,7 @@ class RegisterForm extends Component{
                                 <Form.Label>First Name</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter first name" 
-                                    className="rounded-pill border-light bg-green text-white"
+                                    className="rounded-pill border-lime bg-green text-white placeholder-lime"
                                     maxLength="50"
                                     name="userName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -106,7 +106,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Last Name</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter last name" 
-                                    className="rounded-pill border-light bg-green text-white"
+                                    className="rounded-pill border-lime bg-green text-white placeholder-lime"
                                     maxLength="50"
                                     name="userName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -117,7 +117,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Email</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter email" 
-                                    className="rounded-pill border-light bg-green text-white"
+                                    className="rounded-pill border-lime bg-green text-white placeholder-lime"
                                     maxLength="50"
                                     name="userName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -128,7 +128,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Login</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter login" 
-                                    className="rounded-pill border-light bg-green text-white"
+                                    className="rounded-pill border-lime bg-green text-white placeholder-lime"
                                     maxLength="50"
                                     name="userName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -139,7 +139,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" 
                                     placeholder="Enter password" 
-                                    className="rounded-pill border-light bg-green text-white"
+                                    className="rounded-pill border-lime bg-green text-white placeholder-lime"
                                     maxLength="40"
                                     name="userPass"
                                     onChange={this.updateUserData.bind(this)} 
@@ -150,7 +150,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Password (repeat)</Form.Label>
                                 <Form.Control type="password" 
                                     placeholder="Repeat password" 
-                                    className="rounded-pill border-light bg-green text-white"
+                                    className="rounded-pill border-lime bg-green text-white placeholder-lime"
                                     maxLength="40"
                                     name="userPass"
                                     onChange={this.updateUserData.bind(this)} 
@@ -158,9 +158,9 @@ class RegisterForm extends Component{
                                     required/>
                             </Form.Group>
                             <div className="w-100 text-start py-3">
-                                <p className="text-white fw-normal">
+                                <p className="text-lime fw-normal">
                                     Registered? 
-                                    <Link to={this.props.backLink.href} className="text-white fw-bold text-decoration-none">
+                                    <Link to={this.props.backLink.href} className="text-lime fw-bold text-decoration-none">
                                          {this.props.backLink.name}
                                     </Link>
                                 </p>
@@ -169,11 +169,11 @@ class RegisterForm extends Component{
                                 <Button 
                                     variant="outline-light" 
                                     type="reset" 
-                                    className="mx-1 rounded-pill">
+                                    className="mx-1 rounded-pill border-lime text-lime">
                                     Clear
                                 </Button>
                                 <Button variant="outline-light" 
-                                    className="mx-1 rounded-pill"
+                                    className="mx-1 rounded-pill border-lime text-lime"
                                     onClick={this.sendForm.bind(this)}>
                                     Register
                                 </Button>
