@@ -99,7 +99,64 @@
         text-shadow: $text__shadow--white;
     }
 }
-
+.offer{
+    &-s4{
+        background-blend-mode: multiply !important;
+        background-color: #777 !important;
+    }
+}
 textarea{
     resize: none;
+}
+
+@media all and (max-width: 767px){
+    .bedroom,.kitchen,.livingroom{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+            background-position: right!important;
+        }
+    }
+    .contact{
+        &-s1,&-s2{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+        &-s1{
+            background-position: right!important;
+        }
+    }
+    .index{
+        &-s1,&-s2,&-s3{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+        &-s1,&-s3{
+            background-position: right!important;
+        }
+    }
+    .navbar{
+        &-toggler{
+            background-color: #555;
+            border-color: #333;
+        }
+        &-nav{
+            background-color: #aaa;
+            border: 1px solid #333;
+            opacity: 0.9;
+            padding: 10px
+        }
+    }
 }
